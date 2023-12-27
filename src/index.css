@@ -1,17 +1,182 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background-image: url("images/wavy-bg.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-top: 15vh;
+}
+.heading > h2 {
+  font-size: 2.5rem;
+}
+.heading > p {
+  margin-top: 5px;
+  font-size: 1.15rem;
+}
+h2 {
+  margin: 0;
+}
+p {
+  margin: 0;
 }
 
-.flag{
-  width: 25px;
+.card {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 37%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
+  padding: 1.75rem;
+}
+.Top-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 22vw;
+}
+.input-text > label {
+  display: block;
+}
+.input-group > input {
+  border: none;
+  outline: none;
+  text-align: left;
+  background: transparent;
+  padding: 10px 7px;
+  font-size: 1.25rem;
+  font-weight: 200;
+  width: 18vw;
+}
+.cur {
+  display: inline;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-left: 4px;
+}
+
+.dropbox {
+  display: flex;
+  flex-direction: column;
+}
+.dropbox-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 22vw;
+}
+.dropbox-group > select {
+  border: none;
+  outline: none;
+  text-align: left;
+  background: transparent;
+  padding: 10px 7px;
+  font-size: 1.25rem;
+  width: 18vw;
+}
+.flag {
+  width: 100px;
+  padding: 10px 7px;
+}
+
+.swap-btn {
+  background-image: url(images/swap.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+.Bottom-div {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.convert-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
+  padding: 10px 20px;
+  background: rgb(0, 113, 235);
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  border: 2px solid rgb(0, 113, 235);
+  order: 1;
+  margin-left: auto;
+}
+
+.fromCur-p {
+  font-size: 1rem;
+  color: rgb(92, 102, 123);
+  font-weight: 600;
+  max-width: 100%;
+}
+.toCur-p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+.info-div {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: rgb(242, 247, 254);
+  border-radius: 6px;
+  font-size: 12px;
+  color: rgb(55, 60, 73);
+}
+.info {
+  background: url(images/info.png);
+  background-size: cover;
+  width: 21px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.amount-error-p,
+.cur-error-p {
+  margin-top: -25px;
+  font-size: 12px;
+  color: red;
 }
