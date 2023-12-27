@@ -32,7 +32,7 @@ import {
   TH,
   ZA,
 } from "country-flag-icons/react/3x2";
-import { countries } from "country-flag-icons";
+// import { countries } from "country-flag-icons";
 
 import currencySymbols from "./currencySymbols";
 import currencyOptions from "./currencyOptions";
@@ -237,7 +237,15 @@ function InputField({
         document.title = "Currency Converter";
       };
     },
-    [fromCur, toCur,amount, isLoading, initial]
+    [
+      fromCur,
+      toCur,
+      amount,
+      formattedAmount,
+      formattedConvertedAmount,
+      isLoading,
+      initial,
+    ]
   );
 
   useEffect(
