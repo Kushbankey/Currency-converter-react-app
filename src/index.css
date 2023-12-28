@@ -156,7 +156,6 @@ p {
   padding-top: 0.5rem;
 }
 .info-div {
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -180,3 +179,86 @@ p {
   font-size: 12px;
   color: red;
 }
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .flag {
+    padding: 0 0 0 2px;
+  }
+}
+
+/* Small screens (phones) */
+@media only screen and (max-width: 600px) {
+  .heading {
+    margin-top: 8vh;
+  }
+  .heading > h2 {
+    font-size: 1.5rem;
+  }
+  .heading > p {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+
+  .card {
+    left: 4%;
+    right: 4%;
+    top: 22%;
+  }
+  .Top-div {
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .dropbox {
+    margin-top: 1.5rem;
+  }
+  .input-group,
+  .dropbox-group {
+    width: 80vw;
+    height: 45px;
+  }
+  .input-group > input,
+  .dropbox-group > select {
+    width: 65vw;
+  }
+
+  .swap-btn {
+    transform: rotate(90deg);
+  }
+
+  .Bottom-div {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .convert-btn {
+    width: 100%;
+    padding: 10px 20px;
+    order: 0;
+    margin: 0;
+  }
+  .info-div {
+    margin-top: 15px;
+    padding: 8px;
+  }
+
+  .result {
+    margin-left: -35vw;
+  }
+  .amount-error-p{
+    margin-left: 30vw;
+  }
+
+  .info-div {
+    border-radius: 6px;
+    font-size: 12px;
+    color: rgb(55, 60, 73);
+  }
+  .info {
+    width: 38px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
